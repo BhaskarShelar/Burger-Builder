@@ -1,0 +1,20 @@
+.Modal{
+    position: absolute;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border:1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 13px;
+    left: 10%;
+    top: 20%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+@media(min-width:450px){
+    .Modal{
+        width: 380px;
+        left: calc(35%-210px);
+    }
+}
