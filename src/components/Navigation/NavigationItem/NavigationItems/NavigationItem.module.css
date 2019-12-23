@@ -6,7 +6,7 @@
 }
 
 .NavigationItem a {
-    color: #8F5C2C;
+    color: rgb(92, 88, 85);
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
@@ -43,3 +43,4 @@
         color: white;
     }
 }
+ 
