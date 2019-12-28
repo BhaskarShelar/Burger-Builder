@@ -7,11 +7,11 @@ class OrderSummary extends Component{
         console.log("order Summary WIll update");
     }    
     render() {
-    const ingredientSumamry = Object.keys(this.props.ingredients)
+    const ingredientSumamry = Object.keys(this.props.ingredtents)
     .map(igKey => {
         return <li key={igKey}>
             <span style={{ textTransform: 'capitalize' }}>{igKey}</span> :
-                {this.props.ingredients[igKey]}
+                {this.props.ingredtents[igKey]}
         </li>;
     });     
         return (
