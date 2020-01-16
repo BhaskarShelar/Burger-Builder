@@ -30,11 +30,11 @@ class BurgerBuilder extends Component {
 
     }
     componentDidMount() {
-        console.log(this.props);
+        // console.log(this.props);
         axios.get('https://react-burger-56951.firebaseio.com/ingredtents.json')
             .then(response => {
                 this.setState({ ingredtents: response.data });
-                console.log(this.state.ingredtents);
+                // console.log(this.state.ingredtents);
             })
             .catch(error => {
                 this.setState({ error: true });
