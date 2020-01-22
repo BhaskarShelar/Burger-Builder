@@ -26,7 +26,8 @@ class BurgerBuilder extends Component {
         totalPrice: 4,
         purchasable: false,
         purchasing: false,
-        loading: false
+        loading: false,
+        error: false
 
     }
     componentDidMount() {
@@ -95,12 +96,12 @@ class BurgerBuilder extends Component {
     }
 
     purchaseContinueHandler = () => {
-        
+
         const queryParam = [];
         for (let i in this.state.ingredtents) {
             queryParam.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredtents[i]));
         }
-        queryParam.push('price='+this.state.totalPrice);
+        queryParam.push('price=' + this.state.totalPrice);
         const queryString = queryParam.join('&');
         this.props.history.push({
             pathname: '/checkout',
